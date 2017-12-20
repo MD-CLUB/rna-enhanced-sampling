@@ -10,113 +10,115 @@ Enhanced Sampling Method  & CVs & RNA Systems & Simulation Tools & RNA Force Fie
 \midrule 
 M-REMD & - & UUCG-TL (10,14-mers), CCCC, GACC & AMBER & CHARMM36, \emph{ff}12, \emph{ff}12 (CP), \emph{ff}99Chen, \emph{ff}99Yild & TIP3P, KCl {[}j{]} & - & $\sim$7663 & \cite{bergonzo2015highly}\tabularnewline
 \midrule 
-M-REMD & - & CCCC, GACC & AMBER & \emph{ff}12, \emph{ff}12 (CP) & TIP3P, SPC/E, TIP4P-Ew, OPC, Na$^{+}$ {[}j{]} & - & $\sim$920 & \cite{bergonzo2015improved}\tabularnewline
+M-REMD & - & CCCC, GACC & AMBER & \emph{ff}12, \emph{ff}12 (CP) & TIP3P, SPC/E, TIP4P-Ew, OPC, Na$^{+}$ {[}j{]} & - & $\sim$1382.4 & \cite{bergonzo2015improved}\tabularnewline
 \midrule 
-H-REMD & - & single strands, duplexes (12-mers) & AMBER, GROMACS & \emph{ff}12 & TIP3P, Na$^{+}$, NaCl {[}j{]} & - & $\sim$1.7 & \cite{sakuraba2015predicting}\tabularnewline
+H-REMD & - & single strands (6-mers), duplexes (12-mers) & AMBER, GROMACS & \emph{ff}12 & TIP3P, Na$^{+}$, NaCl {[}j{]} & - & 1.68 & \cite{sakuraba2015predicting}\tabularnewline
 \midrule 
 T-REMD & - & AAAA, CAAU, CCCC, GACC, UUUU & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$ {[}j{]} & - & 264 & \cite{bottaro2016rna}\tabularnewline
 \midrule 
-METAD, T-REMD, RECT & $\alpha$,$\beta$,$\gamma$,$\epsilon$,$\zeta$,$Z_{x}$,$\chi$, distance & CC, AA, CA, AC, GACC, CCCC, AAAA & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$ {[}j{]} & - & $\sim$206 & \cite{gil2016empirical}\tabularnewline
+METAD, T-REMD, RECT & $\alpha$,$\beta$,$\gamma$,$\epsilon$,$\zeta$,$Z_{x}$,$\chi$, distance (COM) & CC, AA, CA, AC, GACC, CCCC, AAAA & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$ {[}j{]} & - & $\sim$206 & \cite{gil2016empirical}\tabularnewline
 \midrule 
 METAD, T-REMD, REST2 & H-bonds, RMSD  & GAGA-TL (8,10-mers) & AMBER, GROMACS+PLUMED & \emph{ff}12, \emph{ff}12 (CP, HB-fix), \emph{ff}99Chen & TIP3P, K$^{+}$, KCl, Na$^{+}$ {[}j,c{]} & - & 966 & \cite{Kuhrova2016}\tabularnewline
 \midrule 
-T-REMD+METAD & $\epsilon$RMSD & GAGA-TL, UUCG-TL (8-mers) & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$ {[}j{]} & - & 48 & \cite{bottaro2016free}\tabularnewline
+T-REMD+METAD & $\epsilon$RMSD & GAGA-TL, UUCG-TL (6,8-mers) & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$ {[}j{]} & - & 96 & \cite{bottaro2016free}\tabularnewline
 \midrule 
-RECT & $\alpha$,$\beta$,$\gamma$,$\epsilon$,$\zeta$,$Z_{x}$,$Z_{y}$,$\chi$, distance & A, C, AA, AC, CA, CC & GROMACS+PLUMED & \emph{ff}12, \emph{ff}12 ($\alpha,\zeta$ dihedrals, NMR corr.) & TIP3P, OPC, Na$^{+}$ {[}j{]} & - & $\sim$35 & \cite{cesari2016maxent}\tabularnewline
+RECT & $\alpha$,$\beta$,$\gamma$,$\epsilon$,$\zeta$,$Z_{x}$,$Z_{y}$,$\chi$, distance (COM) & A, C, AA, AC, CA, CC & GROMACS+PLUMED & \emph{ff}12, \emph{ff}12 ($\alpha,\zeta$ dihedrals, NMR corr.) & TIP3P, OPC, Na$^{+}$ {[}j{]} & - & $\sim$35 & \cite{cesari2016maxent}\tabularnewline
 \midrule 
-RECT, T-REMD+METAD & $\alpha$,$\beta$,$\gamma$,$\epsilon$,$\zeta$,$Z_{x}$,$Z_{y}$,$\chi$, distance, $\epsilon$RMSD & GACC, CCCC, AAAA, CAAA, UUCG-TL (8-mer)  & GROMACS+PLUMED & \emph{ff}12 (CP) & OPC, Na$^{+}$ {[}j{]} & - & $\sim$420 & \cite{yang2016predicting}\tabularnewline
+RECT, T-REMD+METAD & $\alpha$,$\beta$,$\gamma$,$\epsilon$,$\zeta$,$Z_{x}$,$Z_{y}$,$\chi$, distance (COM), $\epsilon$RMSD & GACC, CCCC, AAAA, CAAA, UUCG-TL (8-mer)  & GROMACS+PLUMED & \emph{ff}12 (CP) & OPC, Na$^{+}$ {[}j{]} & - & $\sim$504 & \cite{yang2016predicting}\tabularnewline
 \midrule 
-US & $\alpha$,$\beta$,$\gamma$,$\epsilon$,$\zeta$,$\chi$ & 16 dinucleotides & AMBER & \emph{ff}12, \emph{ff}12 ($\alpha,\beta,\gamma,\epsilon,\zeta,\chi$ dihedrals) & TIP3P, Na$^{+}$, NaCl {[}j{]} & - & $\sim$18 & \cite{aytenfisu2017revised}\tabularnewline
+US & $\alpha$,$\beta$,$\gamma$,$\epsilon$,$\zeta$,$\chi$ & 16 dinucleotides & AMBER & \emph{ff}12, \emph{ff}12 ($\alpha,\beta,\gamma,\epsilon,\zeta,\chi$ dihedrals) & TIP3P, Na$^{+}$, NaCl {[}j{]} & - & 16.128 & \cite{aytenfisu2017revised}\tabularnewline
 \midrule 
 \multicolumn{9}{l}{\emph{Conformational Landscapes}}\tabularnewline
 \midrule 
-RECT, H-REMD, T-REMD & $\alpha$,$\beta$,$\gamma$,$\delta$,$\epsilon$,$\zeta$,$Z_{x}$,$Z_{y}$,$\chi$, distance & GACC & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$ {[}(?){]} & - & $\sim$14.4 & \cite{gil2015}\tabularnewline
+RECT, H-REMD, T-REMD & $\alpha$,$\beta$,$\gamma$,$\delta$,$\epsilon$,$\zeta$,$Z_{x}$,$Z_{y}$,$\chi$, distance (COM) & GACC & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$ {[}(?){]} & - & $\sim$14.4 & \cite{gil2015}\tabularnewline
 \midrule 
-METAD & H-bonds, RGyr, RMSD, $\chi$ & GAGA-TL, UUCG-TL (10-mers) & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$ {[}a{]} & - & 0.84 & \cite{haldar2015insights}\tabularnewline
+METAD & H-bonds, RGyr, RMSD, $\chi$ & GAGA-TL, UUCG-TL (10-mers) & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$ {[}a{]} & - & 4.44 & \cite{haldar2015insights}\tabularnewline
 \midrule 
 T-REMD & - & SAM-II riboswitch & GROMACS & \emph{ff}99 (!) & TIP3P, Na$^{+}$, NaCl {[}(?){]} & - & 6 & \cite{xue2015folding}\tabularnewline
 \midrule 
-T-REMD, SMD & distances (COM) & (cgauUCUaugc) duplex (22-mer) & AMBER & \emph{ff}99bsc0Yild & TIP3P, Na$^{+}$ {[}j{]} & - & $\sim$5 & \cite{park2015crystallographic}\tabularnewline
+T-REMD, SMD & distance (COM) & (cgauUCUaugc) duplex (22-mer) & AMBER & \emph{ff}99bsc0Yild & TIP3P, Na$^{+}$ {[}j{]} & - & $\sim$5 & \cite{park2015crystallographic}\tabularnewline
 \midrule 
-T-REMD & - & SVL loop (17-mer) & AMBER & \emph{ff}12 & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$, MgCl$_{2}$ {[}j,v{]} & - & $\sim$58 & \cite{bergonzo2015stem}\tabularnewline
+T-REMD & - & SVL loop (17-mer) & AMBER & \emph{ff}12 & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$, MgCl$_{2}$ {[}j,v{]} & - & 57.6 & \cite{bergonzo2015stem}\tabularnewline
 \midrule 
-A-REMD & $Z_{x}$, $Z_{y}$, $\chi$ & U & AMBER & \emph{ff}99 & TIP4P-Ew & SE/(AM1/d-PhoT) & $\sim$0.1 & \cite{radak2015characterization}\tabularnewline
+A-REMD & $Z_{x}$, $Z_{y}$, $\chi$ & U nucleoside & AMBER & \emph{ff}99 & TIP4P-Ew & SE(AM1/d-PhoT) & $\sim$0.1 & \cite{radak2015characterization}\tabularnewline
 \midrule 
-BE-METAD & H-bond, RGyr, energy & gene32 mRNA pseudoknot (32-mer) & GROMACS+PLUMED & \emph{ff}99bsc0 (!) & TIP3P, Na$^{+}$, NaCl {[}(?){]} & - & 3 & \cite{bian2015free}\tabularnewline
+BE-METAD & H-bonds, RGyr, energy & gene32 mRNA pseudoknot (32-mer) & GROMACS+PLUMED & \emph{ff}99bsc0 (!) & TIP3P, Na$^{+}$, NaCl {[}(?){]} & - & 3 & \cite{bian2015free}\tabularnewline
 \midrule 
-US & distance (COM) & \emph{add }riboswitch & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Mg$^{2+}$ {[}v{]} & - & $\sim$0.9 & \cite{di2015kissing}\tabularnewline
+US & distance (COM) & \emph{add }riboswitch & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Mg$^{2+}$ {[}v{]} & - & 1.177 & \cite{di2015kissing}\tabularnewline
 \midrule 
-US & $\chi$ & duplex, single strands with 2-thiouridines (14-mers) & NAMD & CHARMM27 (!) & (?) & - & 0.144 & \cite{larsen2015thermodynamic}\tabularnewline
+US & $\chi$ & U and 2-thio-U nucleosides & NAMD & CHARMM27 (!) & (?) & - & 0.144 & \cite{larsen2015thermodynamic}\tabularnewline
 \midrule 
-US & $\chi$, pseudodihedral (COM) & duplexes with CUG repeats (9,11,19-mers) & AMBER & \emph{ff}99bsc0Yild & TIP3P, Na$^{+}$, NaCl {[}j{]} & - & $\sim$6 & \cite{yildirim2015computational}\tabularnewline
+US & $\chi$, pseudodihedral (COM) & A, G, U, and C nucleosides, duplex with CUG (18-mer) & AMBER & \emph{ff}99bsc0Yild & TIP3P, Na$^{+}$, NaCl {[}j{]} & - & 6.016 & \cite{yildirim2015computational}\tabularnewline
 \midrule
-US - pseudo string method & distance (COM) & duplex (32-mer) & GROMACS & \emph{ff}99bsc0 (!) & TIP3P, Na$^{+}$, NaCl, {[}Co(NH$_{3}$)$_{6}${]}$^{3+}$ {[}(?), ch{]} & - & $\sim$0.06 & \cite{wu2015multivalent}\tabularnewline
+US+pseudo-spring method & distance (COM) & duplex (32-mer) & GROMACS & \emph{ff}99bsc0 (!) & TIP3P, Na$^{+}$, NaCl, {[}Co(NH$_{3}$)$_{6}${]}$^{3+}$ {[}(?), ch{]} & - & $\sim$0.3 & \cite{wu2015multivalent}\tabularnewline
 \midrule 
 T-REMD & - & GCAA -TL (8-mer) & GROMACS & \emph{ff}99Chen & TIP3P, K$^{+}$, KCl {[}c{]} & - & 448  & \cite{miner2016free}\tabularnewline
 \midrule
-T-REMD & - & pT181 RNA hairpins (22-mers) & GROMACS & \emph{ff}99Chen (other \%) & TIP3P, Na$^{+}$, NaCl {[}a,c{]} & - & $\sim$9 & \cite{takahashi2016using}\tabularnewline
+T-REMD & - & pT181 RNA hairpins (48-mers) & GROMACS & \emph{ff}99Chen (other \%) & TIP3P, Na$^{+}$, NaCl {[}a,c{]} & - & 17.16 & \cite{takahashi2016using}\tabularnewline
 \midrule
-RAM & H-bonds, distances & TAR (29-mer) in RNA:peptide complex & GROMACS+PLUMED & \emph{ff}12 & TIP3P, K$^{+}$, MgCl$_{2}$ {[}(?){]} & - & 0.8 & \cite{borkar2016structure}\tabularnewline
+RAM & H-bonds, distance (COM) & TAR (29-mer) in RNA:peptide complex & GROMACS+PLUMED & \emph{ff}12 & TIP3P, K$^{+}$, MgCl$_{2}$ {[}(?){]} & - & 0.8 & \cite{borkar2016structure}\tabularnewline
 \midrule 
-REMD+US & distances, RMSD & U-singlestrand (5-mer) in RNA:protein complex & NAMD & \emph{ff}99bsc0 & (?) & - & 3.6 & \cite{vukovic2016molecular}\tabularnewline
+REMD+US & distance, RMSD & U-singlestrand (5-mer) in RNA:protein complex & NAMD & \emph{ff}99bsc0 & (?) & - & 3.6 & \cite{vukovic2016molecular}\tabularnewline
 \midrule 
-US & distances & GTPase center of rRNA & AMBER & \emph{ff}12 & TIP3P, K$^{+}$, KCl, Mg$^{2+}$, MgCl$_{2}$ {[}j,v{]} & - & $\sim$1.3 & \cite{hayatshahi2017investigating}\tabularnewline
+US & distance (COM) & GTPase center of rRNA & AMBER & \emph{ff}12 & TIP3P, K$^{+}$, KCl, Mg$^{2+}$, MgCl$_{2}$ {[}j,v{]} & - & 4.494 & \cite{hayatshahi2017investigating}\tabularnewline
 \midrule
-RAM & $\alpha$,$\beta$,$\delta$,$\epsilon$,$\zeta$, H-bonds  & UUCG-TL (14-mer) & GROMACS+PLUMED & \emph{ff}12 & TIP3P, K$^{+}$, MgCl$_{2}$ {[}(?){]} & - & $\sim$1 & \cite{borkar2017simultaneous}\tabularnewline
+RAM & $\alpha$,$\beta$,$\delta$,$\epsilon$,$\zeta$, H-bonds  & UUCG-TL (14-mer) & GROMACS+PLUMED & \emph{ff}12 & TIP3P, K$^{+}$, MgCl$_{2}$ {[}(?){]} & - & 1.04 & \cite{borkar2017simultaneous}\tabularnewline
 \midrule
-T-REMD & - & theophylline aptamer (ligand-free) & GROMACS & \emph{ff}99 (!) & TIP3P, Na$^{+}$, Mg$^{2+}$, Cl$^{-}$ {[}(?){]} & - & 1.6 & \cite{warfield2017molecular}\tabularnewline
+T-REMD & - & theophylline-binding aptamer (33-mer) & GROMACS & \emph{ff}99 (!) & TIP3P, Na$^{+}$, Mg$^{2+}$, Cl$^{-}$ {[}(?){]} & - & 1.6 & \cite{warfield2017molecular}\tabularnewline
 \midrule 
-GaMD, TMD & RMSD & CRISPR-Cas9 RNA complex & AMBER, NAMD & \emph{ff}12 & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?),a{]} & - & $\sim$14.6 & \cite{palermo2017crispr}\tabularnewline
+GaMD, TMD & RMSD & CRISPR-Cas9 RNA complex & AMBER, NAMD & \emph{ff}12 & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?),a{]} & - & $\sim$12 & \cite{palermo2017crispr}\tabularnewline
 \midrule
-METAD & distance (COM), stacking & PNA:RNA duplex (12-mer) & GROMACS+PLUMED & \emph{ff}99bsc0 & TIP3P, Na$^{+}$ {[}(?){]} & - & 0.4 & \cite{verona2017focus}\tabularnewline
+METAD & distance (COM), stacking & PNAs (6-mers), PNA:RNA duplex (12-mer) & GROMACS+PLUMED & \emph{ff}99bsc0 & TIP3P, Na$^{+}$ {[}(?){]} & - & $\sim$1.2 & \cite{verona2017focus}\tabularnewline
 \midrule
-T-REMD+METAD & H-bonds, RGyr & polio viral RNA hairpin (22-mer) & GROMACS+PLUMED & \emph{ff}99bsc0 (!) & SPC, K$^{+}$, KCl {[}(?){]} & - & $\sim$6.5 & \cite{pathak2017water}\tabularnewline
+T-REMD+METAD & H-bonds, RGyr & polio viral RNA hairpin (22-mer) & GROMACS+PLUMED & \emph{ff}99bsc0 (!) & SPC, K$^{+}$, KCl {[}(?){]} & - & 16 & \cite{pathak2017water}\tabularnewline
 \midrule
-US & pseudodihedral (COM) & hairpin (35-mer) & AMBER & \emph{ff}12 & TIP3P, Na$^{+}$ {[}j{]} & - & 0.72 & \cite{sun2017protonation}\tabularnewline
+US & pseudodihedral (COM) & hairpin from group-II intron (35-mer) & AMBER & \emph{ff}12 & TIP3P, Na$^{+}$ {[}j{]} & - & 1.008 & \cite{sun2017protonation}\tabularnewline
 \midrule 
-METAD & $\chi$, pseudodihedral (COM) & duplexes (9,12-mers) with CAG repeats & AMBER & \emph{ff}99bsc0Yild & TIP3P, Na$^{+}$ {[}j{]} & - & 1.92 & \cite{pan2017structure}\tabularnewline
+METAD & $\chi$, pseudodihedral (COM) & duplexes with A-A mismatches (18-mers) & AMBER & \emph{ff}99bsc0Yild & TIP3P, Na$^{+}$ {[}j{]} & - & $\sim$0.6 & \cite{pan2017structure}\tabularnewline
 \midrule
-T-REMD & - & gcGCAAgc-TL (8-mer) & GROMACS & \emph{ff}99Chen & TIP3P, K$^{+}$, KCl {[}c{]} & - & 6 & \cite{miner2017equilibrium}\tabularnewline
+T-REMD & - & gcGCAAgc-TL (8-mer) & GROMACS & \emph{ff}99Chen & TIP3P, K$^{+}$, KCl {[}c{]} & - & 356 & \cite{miner2017equilibrium}\tabularnewline
 \midrule
 \multicolumn{9}{l}{\emph{Ion Interactions and Ion/ligand Induced Conformational Changes}}\tabularnewline
 \midrule 
-METAD & distance (COM), hydrophobic contacts, H-bonds & duplex (10-mer) with CAG repeats  & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$, NaCl {[}d,j{]} & - & 1.4 & \cite{bochicchio2015molecular}\tabularnewline
+METAD & distance (COM), hydrophobic contacts, H-bonds & duplex with A-A mismatches (20-mer)  & GROMACS+PLUMED & \emph{ff}12 & TIP3P, Na$^{+}$, NaCl {[}d,j{]} & - & 1.4 & \cite{bochicchio2015molecular}\tabularnewline
 \midrule
-US+TI & distance, coordination & mononucleotides, hammerhead ribozyme & AMBER, NAMD & \emph{ff}12 & TIP4P-Ew, Na$^{+}$, NaCl, Mg$^{2+}$, Mn$^{2+}$, Zn$^{2+}$, Cd$^{2+}$ {[}j,p{]} & - & $\sim$11.5 & \cite{panteva2015comparison}\tabularnewline
+US+TI & distance & mononucleotides, hammerhead ribozyme & AMBER, NAMD & \emph{ff}12 & TIP4P-Ew, Na$^{+}$, NaCl, Mg$^{2+}$, Mn$^{2+}$, Zn$^{2+}$, Cd$^{2+}$ {[}j,p{]} & - & $\sim$3.5 & \cite{panteva2015force}\tabularnewline
 \midrule 
-SMD & distances & preQ$_{1}$-III riboswitch & AMBER & \emph{ff}12 (impropers @) & TIP3P, Na$^{+}$, NaCl {[}j{]} & - & 0.1 & \cite{liberman2015structural}\tabularnewline
+SMD & distance & preQ$_{1}$-III riboswitch & AMBER & \emph{ff}12 (impropers @) & TIP3P, Na$^{+}$, NaCl {[}j{]} & - & 0.1 & \cite{liberman2015structural}\tabularnewline
 \midrule 
 BE-METAD & distance, coordination & nucleosides, GpG dinucleotide, GC duplex (8-mer) & GROMACS+PLUMED & \emph{ff}12 & TIP3P, K$^{+}$, KCl, Mg$^{2+}$ {[}j,v{]} & - & 82 & \cite{cunha2016ions}\tabularnewline
 \midrule 
-GCMC-MD & distances, coordinations & BWYV pseudoknot, VS ribozyme, 23S rRNA, Mg$^{2+}$ riboswitch & GROMACS & CHARMM36 & TIP3P, Na$^{+}$, K$^{+}$, Mg$^{2+}$, MgCl$_{2}$ {[}(?){]} & - & $\sim$4 & \cite{lemkul2016characterization}\tabularnewline
+GCMC-MD & distance, coordination & BWYV pseudoknot, VS ribozyme, 23S rRNA, Mg$^{2+}$ riboswitch & GROMACS & CHARMM36 & TIP3P, Na$^{+}$, K$^{+}$, Mg$^{2+}$, MgCl$_{2}$ {[}(?){]} & - & 4 & \cite{lemkul2016characterization}\tabularnewline
 \midrule 
-US & distance (COM) & GTPase center of rRNA & AMBER & \emph{ff}12 & TIP3P, K$^{+}$, KCl, Mg$^{2+}$, MgCl$_{2}$ {[}j,v{]} & - & 20.5 & \cite{hayatshahi2017computational}\tabularnewline
+US & distance (COM) & GTPase center of rRNA & AMBER & \emph{ff}12 & TIP3P, K$^{+}$, KCl, Mg$^{2+}$, MgCl$_{2}$ {[}j,v{]} & - & 20.488 & \cite{hayatshahi2017computational}\tabularnewline
 \midrule 
-TI & distances & guanine riboswitch & AMBER & \emph{ff}12 & TIP3P, Na$^{+}$ {[}(?){]} & - & $\sim$0.6 & \cite{hu2017ligand}\tabularnewline
+TI & distance & guanine riboswitch & AMBER & \emph{ff}12 & TIP3P, Na$^{+}$ {[}(?){]} & - & 0.576 & \cite{hu2017ligand}\tabularnewline
 \midrule 
+T-REMD, METAD & distance (COM) & siRNA duplex (42-mer) & GROMACS+PLUMED & {ff}99Yild & TIP3P, Na$^{+}$, NaCl {[}(?){]} & - & 28.8 & \cite{grasso2017free}\tabularnewline
+\midrule
 \multicolumn{9}{l}{\emph{Reactivity and Catalysis}}\tabularnewline
 \midrule 
-A-REMD & distances & HDV ribozyme & AMBER & \emph{ff}12 & TIP4P-Ew, Na$^{+}$, NaCl, Mg$^{2+}$ {[}j, dmy{]} & SE(AM1/d-PhoT) & 0.235 & \cite{radak2015assessment}\tabularnewline
+A-REMD & distance & HDV ribozyme & AMBER & \emph{ff}12 & TIP4P-Ew, Na$^{+}$, NaCl, Mg$^{2+}$ {[}j, dmy{]} & SE(AM1/d-PhoT) & $\sim$0.235 & \cite{radak2015assessment}\tabularnewline
 \midrule 
-US+string method & distances & \emph{glmS} riboswitch & Q-Chem, CHARMM & \emph{ff}99 & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?){]} & DFT(B3LYP) & $\sim$0.00017 & \cite{zhang2015role}\tabularnewline
+US+string method & distance & \emph{glmS} riboswitch & Q-Chem, CHARMM & \emph{ff}99 & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?){]} & DFT(B3LYP) & 0.00225, $\sim$0.00015 & \cite{zhang2015role}\tabularnewline
 \midrule 
 T-REMD & - & hammerhead ribozyme & LAMMPS & \emph{ff}99bsc0 (!) & SPC/E, Na$^{+}$, Mg$^{2+}$ {[}(?){]} & - & 5 & \cite{swadling2015structure}\tabularnewline
 \midrule 
-US+string method & distances, angles & HDV ribozyme & Q-Chem, CHARMM & \emph{ff}99 & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?){]} & MM, DFT/(B3LYP) & 0.0465, 0.00019 & \cite{thaplyal2015inverse}\tabularnewline
+US+string method & distance, angle & HDV ribozyme & Q-Chem, CHARMM & \emph{ff}99 & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?){]} & MM, DFT(B3LYP) & 0.0465, $\sim$0.00019 & \cite{thaplyal2015inverse}\tabularnewline
 \midrule 
-US, TI & distances & twister ribozyme & AMBER & \emph{ff}12 & TIP4P-Ew, Na$^{+}$, NaCl, Mg$^{2+}$, MgCl$_{2}$ {[}j{]} & - & 0.5 & \cite{gaines2016ribozyme}\tabularnewline
+US, TI & distance & twister ribozyme & AMBER & \emph{ff}12 & TIP4P-Ew, Na$^{+}$, NaCl, Mg$^{2+}$, MgCl$_{2}$ {[}j{]} & - & 0.525 & \cite{gaines2016ribozyme}\tabularnewline
 \midrule 
-US+string method & distances & \emph{glmS} riboswitch & Q-Chem, CHARMM & \emph{ff}99Yild  & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?){]} & DFT(B3LYP) & $\sim$0.00017 & \cite{zhang2016assessing}\tabularnewline
+US+string method & distance & \emph{glmS} riboswitch & Q-Chem, CHARMM & \emph{ff}99Yild  & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?){]} & DFT(B3LYP) & $\sim$0.000098 & \cite{zhang2016assessing}\tabularnewline
 \midrule 
-TI & distances & group-II introns & CPMD & \emph{ff}12 & TIP3P, Na$^{+}$, K$^{+}$, Mg$^{2+}$ {[}a{]} & DFT(BLYP, B3LYP) & $\sim$0.00001 & \cite{casalino2016activates}\tabularnewline
+TI & distance & group-II introns & CPMD & \emph{ff}12 & TIP3P, Na$^{+}$, K$^{+}$, Mg$^{2+}$ {[}a{]} & DFT(BLYP, B3LYP) & $\sim$0.0001 & \cite{casalino2016activates}\tabularnewline
 \midrule 
-METAD & distances & GAAA-TL, UUCG-TL (10-mers), GC duplex (14-mer) & GROMACS+PLUMED & \emph{ff}12 & TIP3P, K$^{+}$ {[}j{]} & SE(DFTB3) & $\sim$0.001 & \cite{mlynsky2016inline}\tabularnewline
+METAD & distance & GAAA-TL, UUCG-TL (10-mers), GC duplex (16-mer) & GROMACS+PLUMED & \emph{ff}12 & TIP3P, K$^{+}$ {[}j{]} & SE(DFTB3) & 0.72 & \cite{mlynsky2016inline}\tabularnewline
 \midrule 
-US+string method & distances & \emph{glmS} riboswitch & Q-Chem, CHARMM & \emph{ff}99Yild  & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?),v{]} & DFT(B3LYP) & 0.0072 & \cite{bingaman2017glcn6p}\tabularnewline
+US+string method & distance & \emph{glmS} riboswitch & Q-Chem, CHARMM & \emph{ff}99Yild  & TIP3P, Na$^{+}$, NaCl, Mg$^{2+}$ {[}(?),v{]} & DFT(B3LYP) & $\sim$0.0072 & \cite{bingaman2017glcn6p}\tabularnewline
 \midrule 
 T-REMD & - & hairpin ribozyme & GROMACS & \emph{ff}12 & TIP4P/2005, Na$^{+}$, NaCl {[}j{]} & - & 25.6 & \cite{schuabb2017pressure}\tabularnewline
 \midrule 
-US, TI & distances & hammerhead ribozyme & AMBER & \emph{ff}12 & TIP4P-Ew, Na$^{+}$, NaCl, Mg$^{2+}$ {[}j,p{]} & MM, DFT(PB0) & 0.11, 0.0002 & \cite{chen2017divalent}\tabularnewline
+US, TI & distance & hammerhead ribozyme & AMBER & \emph{ff}12 & TIP4P-Ew, Na$^{+}$, NaCl, Mg$^{2+}$ {[}j,p{]} & MM, DFT(PB0) & $\sim$0.33, $\sim$0.0004 & \cite{chen2017divalent}\tabularnewline
 \bottomrule
 \end{tabular}
 %\end{center}
